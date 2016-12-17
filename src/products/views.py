@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.http import Http404
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
@@ -14,7 +15,18 @@ class ProductListView(ListView):
     def get_context_data(self, *args, **kwargs):
         context = super(ProductListView, self).get_context_data(*args, **kwargs)
         context["now"] = timezone.now()
+        context["query"] = self.request.GET.get("q")
         return context
+
+    def get_queryset(self, *args, **kwargs):
+        query_set = super(ProductListView, self).get_queryset(*args, **kwargs)
+        query = self.request.GET.get("q")
+        if query:
+            query_set = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(description__icontains=query)
+            )
+        return query_set
 
 class ProductDetailView(DetailView):
     model = Product
