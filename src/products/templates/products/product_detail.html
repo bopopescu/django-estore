@@ -1,15 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {{ object.title }}
-    {% if object.variation_set.count > 1 %}
-         <select class="form-control">
-            {% for variation in object.variation_set.all %}
-                <option value="{{ variation.id }}">{{ variation }}</option>
-            {% endfor %}
-        </select>
-    {% else %}
-        <br>
-        <a href="#">Add to Cart</a>
-    {% endif %}
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>{{ object.title }}</h2>
+        <div>
+            {% if object.productimage_set.count > 0 %}
+                {% for img in object.productimage_set.all %}
+                    <img class="img-responsive" src="{{ img.image.url }}">
+                {% endfor %}
+            {% endif %}
+        </div>
+            <p class="lead">
+                {{ object.description }}
+            </p>
+        </div>
+        <!--Product Sidebar-->
+        <div class="col-sm-4">
+            <h3>{{ object.price }}</h3>
+            {% if object.variation_set.count > 1 %}
+                <select class="form-control">
+                    {% for variation in object.variation_set.all %}
+                        <option value="{{ variation.id }}">
+                            {{ variation }}
+                        </option>
+                    {% endfor %}
+                </select>
+            {% endif %}
+            <br>
+            <a href="#">Add to Cart</a>
+            <br><hr>
+            <h4>Related Products</h4>
+        </div>
+        <!--End Product Sidebar-->
+    </div>
 {% endblock %}
