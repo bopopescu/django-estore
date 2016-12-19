@@ -17,11 +17,11 @@
         </div>
         <!--Product Sidebar-->
         <div class="col-sm-4">
-            <h3>{{ object.price }}</h3>
+            <h3 id="price">{{ object.price }}</h3>
             {% if object.variation_set.count > 1 %}
-                <select class="form-control">
+                <select class="form-control variation_select">
                     {% for variation in object.variation_set.all %}
-                        <option value="{{ variation.id }}">
+                        <option data-sale-price="{{ variation.sale_price }}" data-price="{{ variation.price }}" value="{{ variation.id }}">
                             {{ variation }}
                         </option>
                     {% endfor %}
@@ -40,4 +40,29 @@
         </div>
         <!--End Product Sidebar-->
     </div>
+{% endblock %}
+
+{% block pageJs %}
+    {% load static %}
+    <script src="{% static 'js/product_detail.js' %}"></script>
+    <script>
+
+    function setPrice() {
+        var price = $('.variation_select option:selected').attr("data-price");
+        var sale_price = $('.variation_select option:selected').attr("data-sale-price");
+        if (sale_price  != "None" || sale_price==null) {
+            $("#price").html(sale_price + " " + "<small style='color: red; text-decoration: line-through;'>" + price + "</small>");
+        }
+        else {
+            $('#price').text(price);
+        }
+    }
+
+    $(document).ready(function () {
+        setPrice();
+        $(".variation_select").change(function () {
+            setPrice();
+        })
+    });
+    </script>
 {% endblock %}
