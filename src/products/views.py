@@ -33,15 +33,15 @@ class VariationListView(StaffRequiredMixin, ListView):
 
     def post(self, request, *args, **kwargs):
         formset = VaraitionInventoryFormSet(request.POST, request.FILES)
-        print request.POST
         if formset.is_valid():
             formset.save(commit=False)
             for form in formset:
                 new_item = form.save(commit=False)
-                product_pk = self.kwargs.get("pk")
-                product = get_object_or_404(Product, pk=product_pk)
-                new_item.product = product
-                new_item.save()
+                if new_item.title:
+                    product_pk = self.kwargs.get("pk")
+                    product = get_object_or_404(Product, pk=product_pk)
+                    new_item.product = product
+                    new_item.save()
 
             messages.success(request, "Your inventory and pricing has been updated")
             return redirect("products")
