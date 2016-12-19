@@ -17,8 +17,8 @@
         </div>
         <!--Product Sidebar-->
         <div class="col-sm-4">
-            <h3 id="price">{{ object.price }}</h3>
             {% if object.variation_set.count > 1 %}
+                <h3 id="price">{{ object.price }}</h3>
                 <select class="form-control variation_select">
                     {% for variation in object.variation_set.all %}
                         <option data-sale-price="{{ variation.sale_price }}" data-price="{{ variation.price }}" value="{{ variation.id }}">
@@ -26,6 +26,15 @@
                         </option>
                     {% endfor %}
                 </select>
+            {% else %}
+                <h3 id="price">
+                {% if object.variation_set.first.sale_price %}
+                    {{ object.variation_set.first.sale_price }}
+                    <small class="og-price">{{ object.variation_set.first.price }}</small>
+                {% else %}
+                    {{ object.variation_set.first.price }}
+                {% endif %}
+                </h3>
             {% endif %}
             <br>
             <a href="#">Add to Cart</a>
@@ -51,7 +60,7 @@
         var price = $('.variation_select option:selected').attr("data-price");
         var sale_price = $('.variation_select option:selected').attr("data-sale-price");
         if (sale_price  != "None" || sale_price==null) {
-            $("#price").html(sale_price + " " + "<small style='color: red; text-decoration: line-through;'>" + price + "</small>");
+            $("#price").html(sale_price + " " + "<small class='og-price'>" + price + "</small>");
         }
         else {
             $('#price').text(price);
@@ -59,7 +68,7 @@
     }
 
     $(document).ready(function () {
-        setPrice();
+        //setPrice();
         $(".variation_select").change(function () {
             setPrice();
         })
