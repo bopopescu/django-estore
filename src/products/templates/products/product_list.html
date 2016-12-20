@@ -1,15 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <table class="table">
+    <h1>All Products</h1><a href="{% url "categories" %}">Categories</a>
+    <div class="row">
     {% for object in object_list %}
-        <tr>
-        <td>
-            <a href='{{ object.get_absolute_url }}'>
-                {{ object.title }}
-            </a>
-        </td>
-        </tr>
+        <div class="thumbnail col-xs-4">
+            <h4 class="text-align-center">
+                <a href="{{ object.get_absolute_url }}">{{ object.title }}</a>
+            </h4>
+            {% if object.get_image_url %}
+                <img class="img-responsive" src="{{ object.get_image_url }}">
+            {% endif %}
+        </div>
+        {% cycle '' '' '</div><div class="row">' %}
     {% endfor %}
-    </table>
+    </div>
 {% endblock %}

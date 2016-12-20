@@ -3,15 +3,17 @@
 {% block content %}
     <h3>{{ object }}</h3>
 
-    <table class="table">
-    {% for product in products %}
-        <tr>
-        <td>
-            <a href='{{ product.get_absolute_url }}'>
-                {{ product.title }}
-            </a>
-        </td>
-        </tr>
+   <div class="row">
+    {% for object in products %}
+        <div class="thumbnail col-xs-4">
+            <h4 class="text-align-center">
+                <a href="{{ object.get_absolute_url }}">{{ object.title }}</a>
+            </h4>
+            {% if object.get_image_url %}
+                <img class="img-responsive" src="{{ object.get_image_url }}">
+            {% endif %}
+        </div>
+        {% cycle '' '' '</div><div class="row">' %}
     {% endfor %}
-    </table>
+    </div>
 {% endblock %}

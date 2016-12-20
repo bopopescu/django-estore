@@ -44,15 +44,19 @@
                 </a>
             </p>
             <h4>Related Products</h4>
-        {% for product in related %}
-            {% if object.get_image_url %}
-                <div>
-                    <img class="img-responsive" src="{{ product.get_image_url }}">
+        <div class="row">
+            {% for product in related %}
+                <div class="thumbnail col-xs-6">
+                    <h4 class="text-align-center">
+                        <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+                    </h4>
+                    {% if product.get_image_url %}
+                        <img class="img-responsive" src="{{ product.get_image_url }}">
+                    {% endif %}
                 </div>
-            {% else %}
-                <a href="{{ product.get_absolute_url }}">{{ product.title }}</a><br>
-            {% endif %}
-        {% endfor %}
+                {% cycle '' '</div><div class="row">' %}
+            {% endfor %}
+        </div>
         </div>
         <!--End Product Sidebar-->
     </div>
