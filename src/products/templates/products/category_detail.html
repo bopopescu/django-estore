@@ -5,13 +5,8 @@
 
    <div class="row">
     {% for object in products %}
-        <div class="thumbnail col-xs-4">
-            <h4 class="text-align-center">
-                <a href="{{ object.get_absolute_url }}">{{ object.title }}</a>
-            </h4>
-            {% if object.get_image_url %}
-                <img class="img-responsive" src="{{ object.get_image_url }}">
-            {% endif %}
+        <div class="col-sm-4">
+            {% include "products/product_thumbnail.html" with product=object %}
         </div>
         {% cycle '' '' '</div><div class="row">' %}
     {% endfor %}

@@ -4,13 +4,8 @@
     <h1>All Products</h1><a href="{% url "categories" %}">Categories</a>
     <div class="row">
     {% for object in object_list %}
-        <div class="thumbnail col-xs-4">
-            <h4 class="text-align-center">
-                <a href="{{ object.get_absolute_url }}">{{ object.title }}</a>
-            </h4>
-            {% if object.get_image_url %}
-                <img class="img-responsive" src="{{ object.get_image_url }}">
-            {% endif %}
+        <div class="col-sm-4">
+        {% include "products/product_thumbnail.html" with product=object price="True" %}
         </div>
         {% cycle '' '' '</div><div class="row">' %}
     {% endfor %}
