@@ -6,3 +6,8 @@
 	color: red;
 	text-decoration: line-through;
 }
+
+.custom-cart {
+    font-size: 20px;
+    vertical-align: middle;
+}
