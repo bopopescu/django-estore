@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/home.html" afterPath="$PROJECT_DIR$/src/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/navbar.html" afterPath="$PROJECT_DIR$/src/templates/navbar.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -496,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482217297076</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="068 Login as Dropdown Menu">
+      <created>1482229134341</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1482229134341</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -541,7 +545,8 @@
     <MESSAGE value="065 Improve UI" />
     <MESSAGE value="066 Django Template Include with Variable" />
     <MESSAGE value="067 Featured Product on Homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="067 Featured Product on Homepage" />
+    <MESSAGE value="068 Login as Dropdown Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="068 Login as Dropdown Menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
