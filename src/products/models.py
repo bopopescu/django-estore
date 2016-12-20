@@ -40,6 +40,12 @@ class Product(models.Model):
             "pk": self.pk
         })
 
+    def get_image_url(self):
+        img = self.productimage_set.first()
+        if img:
+            return img.image.url
+        return img #none
+
 
 class Variation(models.Model):
     product = models.ForeignKey(Product)

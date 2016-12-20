@@ -5,6 +5,7 @@ from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
+import random
 
 # Create your views here.
 
@@ -90,7 +91,9 @@ class ProductDetailView(DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(ProductDetailView, self).get_context_data(*args, **kwargs)
-        context["related"] = Product.objects.get_related(self.get_object()).order_by("?")[:6]
+        context["related"] = sorted(
+            Product.objects.get_related(self.get_object())[:6],
+            key=lambda x: random.random)
         return context
 
 def product_detail_view_func(request, id):
