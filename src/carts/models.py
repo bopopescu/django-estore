@@ -13,6 +13,7 @@ from products.models import Variation
 # total price
 
 class CartItem(models.Model):
+    cart = models.ForeignKey("Cart")
     item = models.ForeignKey(Variation)
     quantity = models.PositiveIntegerField(default=1)
     # line item total
@@ -22,7 +23,7 @@ class CartItem(models.Model):
 
 class Cart(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True)
-    items = models.ManyToManyField(CartItem)
+    items = models.ManyToManyField(Variation, through=CartItem)
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
