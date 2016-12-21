@@ -1,14 +1,31 @@
 {% extends "base.html" %}
 
+
+{% block pageJs %}
+    <script>
+    $(document).ready(function () {
+        $(".btn-update").hide();
+    });
+    $('.item-qty').change(function () {
+        $(this).next(".btn-update").fadeIn();
+    });
+    </script>
+{% endblock %}
+
+
+
 {% block content %}
     <table class="table">
     {% for item in object.cartitem_set.all %}
         <tr>
-            <td>
+        <form action="." method="get">
+            <td><br>
                 {{ item.item.get_title }}
             </td>
+            <input type="hidden" name="item" value="{{ item.item.id }}">
             <td>
-                {{ item.quantity }}
+                <input type="number" class="item-qty" name="qty" value="{{ item.quantity }}">
+                <input type="submit" class="btn-update btn btn-link" value="Update Item">
             </td>
             <td>
                 {{ item.line_total }}
@@ -16,6 +33,7 @@
             <td class="text-right">
                 <a href="{{ item.remove }}">X</a>
             </td>
+        </form>
         </tr>
     {% endfor %}
 
