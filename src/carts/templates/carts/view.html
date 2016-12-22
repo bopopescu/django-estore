@@ -28,10 +28,14 @@
                 if (data.deleted) {
                     $("#item-" + item).fadeOut();
                     $("#subtotal").text("Subtotal: " + data.subtotal);
+                    $("#tax_total").text("Tax Total: " + data.tax_total);
+                    $("#total").text("Total: " + data.total);
                 }
                 else {
                     $("#item-line-total-" + item).text(data.line_total);
                     $("#subtotal").text("Subtotal: " + data.subtotal);
+                    $("#tax_total").text("Tax Total: " + data.tax_total);
+                    $("#total").text("Total: " + data.total);
                 }
 
                 if (data.total_items == 0) {
@@ -85,7 +89,12 @@
                 <tr>
                     <td id="subtotal" colspan="4" class="text-right">Subtotal = {{ object.subtotal }}</td>
                 </tr>
-
+                <tr>
+                    <td id="tax_total" colspan="4" class="text-right">Tax Total = {{ object.tax_total }}</td>
+                </tr>
+                <tr>
+                    <td id="total" colspan="4" class="text-right">Total = {{ object.total }}</td>
+                </tr>
             </table>
         {% endif %}
     </div>

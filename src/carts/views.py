@@ -84,13 +84,17 @@ class CartView(SingleObjectMixin, View):
 
         if request.is_ajax():
             try:
-                total = cart_item.line_item_total
+                line_total = cart_item.line_item_total
             except:
-                total = None
+                line_total = None
             try:
                 subtotal = cart_item.cart.subtotal
+                tax_total = cart_item.cart.tax_total
+                total = cart_item.cart.total
             except:
                 subtotal = None
+                tax_total = None
+                total = None
             try:
                 total_items = cart_item.cart.items.count()
             except:
@@ -99,8 +103,10 @@ class CartView(SingleObjectMixin, View):
             data = JsonResponse({
                 "deleted": delete_item,
                 "item_added": item_added,
-                "line_total": total,
+                "line_total": line_total,
                 "subtotal": subtotal,
+                "tax_total": tax_total,
+                "total": total,
                 "flash_message": flash_message,
                 "total_items": total_items
             })
