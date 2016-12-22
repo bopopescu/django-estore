@@ -95,8 +95,7 @@
                         url: "{% url 'cart' %}",
                         data: formData,
                         success: function (data) {
-                            $("#jquery-message").text("Added: " + data.item_added + " Deleted: " + data.deleted);
-                            showFlashMessage("Product Added");
+                            showFlashMessage(data.flash_message);
                         },
                         error: function (response, error) {
                             console.log(response);
