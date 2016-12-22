@@ -2,6 +2,8 @@
 
 
 {% block pageJs %}
+    {% load static %}
+    <script src="{% static 'js/product_details.js' %}"></script>
     <script>
     $(document).ready(function () {
         $(".btn-update").hide();
@@ -30,6 +32,7 @@
                     $("#item-line-total-" + item).text(data.line_total);
                     $("#subtotal").text(data.subtotal)
                 }
+                showFlashMessage("Cart Updated");
             },
             error: function (response, error) {
                 console.log(response);
@@ -40,6 +43,7 @@
     });
     </script>
 {% endblock %}
+
 
 
 

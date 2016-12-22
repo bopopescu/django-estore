@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div class='container container-alert-flash'></div>
     <div class="row">
         <div class="col-sm-8">
             <h2>{{ object.title }}</h2>
@@ -78,6 +79,7 @@
                     $('#price').text(price);
                 }
             }
+
             $(document).ready(function () {
                 //setPrice();
                 $(".variation_select").change(function () {
@@ -94,6 +96,7 @@
                         data: formData,
                         success: function (data) {
                             $("#jquery-message").text("Added: " + data.item_added + " Deleted: " + data.deleted);
+                            showFlashMessage("Product Added");
                         },
                         error: function (response, error) {
                             console.log(response);
