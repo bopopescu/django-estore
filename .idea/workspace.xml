@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/templates/carts/view.html" afterPath="$PROJECT_DIR$/src/carts/templates/carts/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/views.py" afterPath="$PROJECT_DIR$/src/carts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/products/templates/products/product_detail.html" afterPath="$PROJECT_DIR$/src/products/templates/products/product_detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -761,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482413178625</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="086 Display Message from Server">
+      <created>1482413750299</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1482413750300</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="060 Single Variation Price" />
     <MESSAGE value="061 Product Categories" />
     <MESSAGE value="063 Related Products" />
     <MESSAGE value="064 Distinct  Random QuerySets" />
@@ -820,7 +822,8 @@
     <MESSAGE value="083 Ajax Part 1" />
     <MESSAGE value="084 Ajax Part 2" />
     <MESSAGE value="085 jQuery Flash Message" />
-    <option name="LAST_COMMIT_MESSAGE" value="085 jQuery Flash Message" />
+    <MESSAGE value="086 Display Message from Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="086 Display Message from Server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
