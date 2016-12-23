@@ -11,8 +11,8 @@ class UserCheckout(models.Model):
         return self.email
 
 ADDRESS_TYPE = (
-    {'billing', 'Billing'},
-    {'shipping', 'Shipping'}
+    ('billing', 'Billing'),
+    ('shipping', 'Shipping')
 )
 
 class UserAddress(models.Model):
