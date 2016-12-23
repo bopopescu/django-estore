@@ -5,8 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/views.py" afterPath="$PROJECT_DIR$/src/carts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/forms.py" afterPath="$PROJECT_DIR$/src/orders/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/templates/orders/address_select.html" afterPath="$PROJECT_DIR$/src/orders/templates/orders/address_select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/models.py" afterPath="$PROJECT_DIR$/src/orders/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/views.py" afterPath="$PROJECT_DIR$/src/orders/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="145" column="9" lean-forward="false" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+            <state relative-caret-position="175">
+              <caret line="191" column="36" lean-forward="true" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -40,8 +39,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/orders/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="495">
+              <caret line="35" column="69" lean-forward="false" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -52,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/orders/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="425">
+              <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -140,11 +139,11 @@
         <option value="$PROJECT_DIR$/src/django-estore/settings/local.py" />
         <option value="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" />
         <option value="$PROJECT_DIR$/src/orders/admin.py" />
-        <option value="$PROJECT_DIR$/src/orders/models.py" />
         <option value="$PROJECT_DIR$/src/django-estore/urls.py" />
         <option value="$PROJECT_DIR$/src/orders/templates/address_select.html" />
         <option value="$PROJECT_DIR$/src/orders/forms.py" />
         <option value="$PROJECT_DIR$/src/orders/templates/orders/address_select.html" />
+        <option value="$PROJECT_DIR$/src/orders/models.py" />
         <option value="$PROJECT_DIR$/src/orders/views.py" />
         <option value="$PROJECT_DIR$/src/carts/views.py" />
       </list>
@@ -902,7 +901,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482504592351</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="096 Model Choice Field">
+      <created>1482506896454</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1482506896454</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -936,7 +942,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="071 Product Editing with Django Admin Inlines" />
     <MESSAGE value="072 Carts App" />
     <MESSAGE value="073 ManyToMany Through" />
     <MESSAGE value="074 ManyToMany Through using the Python Shell" />
@@ -961,7 +966,8 @@
     <MESSAGE value="093 Save Guest Info" />
     <MESSAGE value="094 UserAddress Model" />
     <MESSAGE value="095 UserAddress View" />
-    <option name="LAST_COMMIT_MESSAGE" value="095 UserAddress View" />
+    <MESSAGE value="096 Model Choice Field" />
+    <option name="LAST_COMMIT_MESSAGE" value="096 Model Choice Field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1016,6 +1022,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#71#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1229,17 +1238,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carts/templates/carts/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/carts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="70" column="64" lean-forward="false" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1305,26 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/orders/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1333,10 +1318,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="69" lean-forward="false" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carts/templates/carts/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orders/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/carts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="145" column="9" lean-forward="false" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+        <state relative-caret-position="175">
+          <caret line="191" column="36" lean-forward="true" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
