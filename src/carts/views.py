@@ -143,6 +143,7 @@ class CheckOutView(DetailView, FormMixin):
         user_can_continue = False
 
         user_check_id = self.request.session.get("user_checkout")
+        #print "User Check Id = " + str(user_check_id)
 
         if not self.request.user.is_authenticated() or user_check_id == None:
             context["login_form"] = AuthenticationForm()
