@@ -151,6 +151,13 @@ class CheckOutView(DetailView, FormMixin):
             user_can_continue = True
         else:
             pass
+
+        if self.request.user.is_authenticated():
+            user_checkout, created = UserCheckout.objects.get_or_create(email=self.request.user.email)
+            user_checkout.user = self.request.user
+            user_checkout.save()
+            self.request.session["user_checkout"] = user_checkout.id
+
         context["user_can_continue"] = user_can_continue
         context["form"] = self.get_form()
         return context
