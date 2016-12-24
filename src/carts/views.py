@@ -143,7 +143,7 @@ class CheckOutView(DetailView, FormMixin):
 
         user_can_continue = False
 
-        user_check_id = self.request.session.get("user_checkout")
+        user_check_id = self.request.session.get("user_checkout_id")
         #print "User Check Id = " + str(user_check_id)
 
         if not self.request.user.is_authenticated() or user_check_id == None:
@@ -158,7 +158,7 @@ class CheckOutView(DetailView, FormMixin):
             user_checkout, created = UserCheckout.objects.get_or_create(email=self.request.user.email)
             user_checkout.user = self.request.user
             user_checkout.save()
-            self.request.session["user_checkout"] = user_checkout.id
+            self.request.session["user_checkout_id"] = user_checkout.id
 
         context["user_can_continue"] = user_can_continue
         context["form"] = self.get_form()
@@ -169,7 +169,7 @@ class CheckOutView(DetailView, FormMixin):
         if form.is_valid():
             email = form.cleaned_data.get("email")
             user_checkout, created = UserCheckout.objects.get_or_create(email=email)
-            request.session["user_checkout"] = user_checkout.id
+            request.session["user_checkout_id"] = user_checkout.id
             return self.form_valid(form)
         else:
             return self.form_invalid(form)

@@ -22,8 +22,8 @@ class AddressSelectFormView(FormView):
         return form
 
     def form_valid(self, form, *args, **kwargs):
-        self.request.session["billing_address_id"] = form.cleaned_data["billing_address"]
-        self.request.session["shipping_address_id"] = form.cleaned_data["shipping_address"]
+        self.request.session["billing_address_id"] = form.cleaned_data["billing_address"].id
+        self.request.session["shipping_address_id"] = form.cleaned_data["shipping_address"].id
         return super(AddressSelectFormView, self).form_valid(form, *args, **kwargs)
 
     def get_success_url(self, *args, **kwargs):
