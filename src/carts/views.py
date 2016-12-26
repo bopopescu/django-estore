@@ -154,7 +154,6 @@ class CheckOutView(DetailView, FormMixin):
         user_can_continue = False
 
         user_check_id = self.request.session.get("user_checkout_id")
-        #print "User Check Id = " + str(user_check_id)
 
         if not self.request.user.is_authenticated() or user_check_id == None:
             context["login_form"] = AuthenticationForm()
@@ -192,6 +191,8 @@ class CheckOutView(DetailView, FormMixin):
         get_data = super(CheckOutView, self).get(request, *args, **kwargs)
         cart = self.get_object()
         new_order = self.get_order()
+        billing_address_id = None
+        shipping_address_id = None
 
         user_checkout_id = request.session.get("user_checkout_id")
         if user_checkout_id != None:
@@ -199,15 +200,15 @@ class CheckOutView(DetailView, FormMixin):
             billing_address_id = request.session.get("billing_address_id")
             shipping_address_id = request.session.get("shipping_address_id")
 
-        if billing_address_id == None or shipping_address_id == None:
-            return redirect("order_address")
-        else:
-            billing_address = UserAddress.objects.get(id=billing_address_id)
-            shipping_address = UserAddress.objects.get(id=shipping_address_id)
+            if billing_address_id == None or shipping_address_id == None:
+                return redirect("order_address")
+            else:
+                billing_address = UserAddress.objects.get(id=billing_address_id)
+                shipping_address = UserAddress.objects.get(id=shipping_address_id)
 
-        new_order.user = user_checkout
-        new_order.billing_address = billing_address
-        new_order.shipping_address = shipping_address
-        new_order.save()
+            new_order.user = user_checkout
+            new_order.billing_address = billing_address
+            new_order.shipping_address = shipping_address
+            new_order.save()
 
         return get_data
