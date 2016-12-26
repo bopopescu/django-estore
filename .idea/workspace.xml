@@ -4,9 +4,8 @@
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" afterPath="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/views.py" afterPath="$PROJECT_DIR$/src/carts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/admin.py" afterPath="$PROJECT_DIR$/src/orders/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/models.py" afterPath="$PROJECT_DIR$/src/orders/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <caret line="145" column="35" lean-forward="true" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
+            <state relative-caret-position="379">
+              <caret line="172" column="42" lean-forward="false" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -39,7 +38,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/orders/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="476">
               <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -48,24 +47,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/orders/views.py">
+      <file leaf-file-name="checkout_view.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            <state relative-caret-position="336">
+              <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orders/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,15 +110,15 @@
         <option value="$PROJECT_DIR$/src/carts/templates/carts/view.html" />
         <option value="$PROJECT_DIR$/src/carts/models.py" />
         <option value="$PROJECT_DIR$/src/django-estore/settings/local.py" />
-        <option value="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" />
         <option value="$PROJECT_DIR$/src/django-estore/urls.py" />
         <option value="$PROJECT_DIR$/src/orders/templates/address_select.html" />
         <option value="$PROJECT_DIR$/src/orders/forms.py" />
         <option value="$PROJECT_DIR$/src/orders/templates/orders/address_select.html" />
         <option value="$PROJECT_DIR$/src/orders/admin.py" />
         <option value="$PROJECT_DIR$/src/orders/models.py" />
-        <option value="$PROJECT_DIR$/src/carts/views.py" />
         <option value="$PROJECT_DIR$/src/orders/views.py" />
+        <option value="$PROJECT_DIR$/src/carts/views.py" />
+        <option value="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" />
       </list>
     </option>
   </component>
@@ -143,7 +130,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="662" />
+    <option name="width" value="644" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectView">
@@ -161,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,8 +284,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -901,11 +888,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482548498230</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="098 Crafting the Order Part 1">
+      <created>1482550354170</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1482550354170</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="662" height="735" extended-state="0" />
+    <frame x="-8" y="0" width="644" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
@@ -935,8 +929,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="073 ManyToMany Through" />
-    <MESSAGE value="074 ManyToMany Through using the Python Shell" />
     <MESSAGE value="075 Add, Remove, Update Cart in a CBV" />
     <MESSAGE value="076 Django Sessions" />
     <MESSAGE value="077 Render Cart View" />
@@ -960,7 +952,9 @@
     <MESSAGE value="095 UserAddress View" />
     <MESSAGE value="096 Model Choice Field" />
     <MESSAGE value="097 Order Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="097 Order Model" />
+    <MESSAGE value="098 Crafting the Order Part 1" />
+    <MESSAGE value="099 Crafting the Order Part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="099 Crafting the Order Part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1225,9 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="70" column="64" lean-forward="false" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1266,14 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/orders/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -1288,7 +1271,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orders/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1302,9 +1294,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/carts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="172" column="42" lean-forward="false" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/orders/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="476">
           <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
@@ -1312,20 +1314,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carts/views.py">
+    <entry file="file://$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="145" column="35" lean-forward="true" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orders/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="336">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
