@@ -4,9 +4,9 @@
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" afterPath="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/views.py" afterPath="$PROJECT_DIR$/src/carts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/django-estore/urls.py" afterPath="$PROJECT_DIR$/src/django-estore/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/mixins.py" afterPath="$PROJECT_DIR$/src/orders/mixins.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/models.py" afterPath="$PROJECT_DIR$/src/orders/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +27,33 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+            <state relative-caret-position="481">
+              <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mixins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/orders/mixins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/orders/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,12 +139,12 @@
         <option value="$PROJECT_DIR$/src/orders/admin.py" />
         <option value="$PROJECT_DIR$/src/orders/forms.py" />
         <option value="$PROJECT_DIR$/src/orders/templates/orders/address_select.html" />
-        <option value="$PROJECT_DIR$/src/orders/models.py" />
         <option value="$PROJECT_DIR$/src/carts/templates/carts/view.html" />
         <option value="$PROJECT_DIR$/src/orders/views.py" />
-        <option value="$PROJECT_DIR$/src/orders/mixins.py" />
         <option value="$PROJECT_DIR$/src/django-estore/urls.py" />
         <option value="$PROJECT_DIR$/src/carts/templates/carts/checkout_view.html" />
+        <option value="$PROJECT_DIR$/src/orders/models.py" />
+        <option value="$PROJECT_DIR$/src/orders/mixins.py" />
         <option value="$PROJECT_DIR$/src/carts/views.py" />
       </list>
     </option>
@@ -557,13 +579,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481968739319</updated>
     </task>
-    <task id="LOCAL-00005" summary="059 Dynamic Update Price with jQuery">
-      <created>1482151116800</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1482151116800</updated>
-    </task>
     <task id="LOCAL-00006" summary="060 Single Variation Price">
       <created>1482153001536</created>
       <option name="number" value="00006" />
@@ -900,7 +915,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482826788974</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="103 Checkout Finalize View">
+      <created>1482827875501</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1482827875501</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -934,7 +956,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="078 Add to Cart From Product View" />
     <MESSAGE value="079 Format Cart  Remove Items" />
     <MESSAGE value="080 Update Cart Item Quantity in Cart" />
     <MESSAGE value="081 Cart Line Item Total" />
@@ -959,7 +980,8 @@
     <MESSAGE value="100 Crafting the Order Part 3" />
     <MESSAGE value="101 Crafting the Order Part 4" />
     <MESSAGE value="102 Custom Mixin for Cart  Order" />
-    <option name="LAST_COMMIT_MESSAGE" value="102 Custom Mixin for Cart  Order" />
+    <MESSAGE value="103 Checkout Finalize View" />
+    <option name="LAST_COMMIT_MESSAGE" value="103 Checkout Finalize View" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1274,30 +1296,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/orders/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orders/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1320,10 +1324,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/orders/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/carts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        <state relative-caret-position="481">
+          <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
