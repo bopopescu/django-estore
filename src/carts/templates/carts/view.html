@@ -65,37 +65,43 @@
         {% if object.cartitem_set.count < 1 %}
             {% include "carts/empty_cart.html" %}
         {% else %}
-            <table class="table">
-            {% for item in object.cartitem_set.all %}
-                <tr id="item-{{ item.item.id }}">
-                    <td><br>
-                        {{ item.item.get_title }}
-                    </td>
-                    <td>
-                        <form action="." method="get">
-                            <input type="hidden" name="item" value="{{ item.item.id }}">
-                            <input type="number" class="item-qty" name="qty" value="{{ item.quantity }}">
-                            <input type="submit" class="btn-update btn btn-link" value="Update Item">
-                        </form>
-                    </td>
-                    <td id="item-line-total-{{ item.item.id }}">
-                        {{ item.line_item_total }}
-                    </td>
-                    <td class="text-right">
-                        <a href="{{ item.remove }}">X</a>
-                    </td>
-                </tr>
-            {% endfor %}
-                <tr>
-                    <td id="subtotal" colspan="4" class="text-right">Subtotal = {{ object.subtotal }}</td>
-                </tr>
-                <tr>
-                    <td id="tax_total" colspan="4" class="text-right">Tax Total = {{ object.tax_total }}</td>
-                </tr>
-                <tr>
-                    <td id="total" colspan="4" class="text-right">Total = {{ object.total }}</td>
-                </tr>
-            </table>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h1>Your Cart</h1>
+                <table class="table">
+                {% for item in object.cartitem_set.all %}
+                    <tr id="item-{{ item.item.id }}">
+                        <td><br>
+                            {{ item.item.get_title }}
+                        </td>
+                        <td>
+                            <form action="." method="get">
+                                <input type="hidden" name="item" value="{{ item.item.id }}">
+                                <input type="number" class="item-qty" name="qty" value="{{ item.quantity }}">
+                                <input type="submit" class="btn-update btn btn-link" value="Update Item">
+                            </form>
+                        </td>
+                        <td id="item-line-total-{{ item.item.id }}">
+                            {{ item.line_item_total }}
+                        </td>
+                        <td class="text-right">
+                            <a href="{{ item.remove }}">X</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                    <tr>
+                        <td id="subtotal" colspan="4" class="text-right">Subtotal = {{ object.subtotal }}</td>
+                    </tr>
+                    <tr>
+                        <td id="tax_total" colspan="4" class="text-right">Tax Total = {{ object.tax_total }}</td>
+                    </tr>
+                    <tr>
+                        <td id="total" colspan="4" class="text-right">Total = {{ object.total }}</td>
+                    </tr>
+                     <tr>
+                        <td colspan="4" class="text-right"><a class="btn btn-lg btn-warning" href="{% url 'checkout' %}">Checkout</a></td>
+                    </tr>
+                </table>
+            </div>
         {% endif %}
     </div>
 {% endblock %}
