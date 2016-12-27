@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carts/views.py" afterPath="$PROJECT_DIR$/src/carts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/mixins.py" afterPath="$PROJECT_DIR$/src/orders/mixins.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orders/models.py" afterPath="$PROJECT_DIR$/src/orders/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +23,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+            <state relative-caret-position="379">
+              <caret line="204" column="34" lean-forward="true" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -579,13 +575,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481968739319</updated>
     </task>
-    <task id="LOCAL-00006" summary="060 Single Variation Price">
-      <created>1482153001536</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1482153001536</updated>
-    </task>
     <task id="LOCAL-00007" summary="060 Single Variation Price">
       <created>1482154793125</created>
       <option name="number" value="00007" />
@@ -922,7 +911,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482827875501</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="104 Order Status">
+      <created>1482830163059</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1482830163059</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -956,7 +952,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="079 Format Cart  Remove Items" />
     <MESSAGE value="080 Update Cart Item Quantity in Cart" />
     <MESSAGE value="081 Cart Line Item Total" />
     <MESSAGE value="082 Cart Subtotal" />
@@ -981,7 +976,8 @@
     <MESSAGE value="101 Crafting the Order Part 4" />
     <MESSAGE value="102 Custom Mixin for Cart  Order" />
     <MESSAGE value="103 Checkout Finalize View" />
-    <option name="LAST_COMMIT_MESSAGE" value="103 Checkout Finalize View" />
+    <MESSAGE value="104 Order Status" />
+    <option name="LAST_COMMIT_MESSAGE" value="104 Order Status" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1344,8 +1340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/carts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+        <state relative-caret-position="379">
+          <caret line="204" column="34" lean-forward="true" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
