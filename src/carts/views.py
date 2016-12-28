@@ -1,3 +1,6 @@
+import braintree
+
+from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 from django.core.urlresolvers import reverse
@@ -14,6 +17,14 @@ from orders.models import UserCheckout, Order, UserAddress
 from products.models import Variation
 
 from .models import Cart, CartItem
+
+if settings.DEBUG:
+    braintree.Configuration.configure(
+        braintree.Environment.Sandbox,
+        merchant_id=settings.BRAINTREE_MERCHANT_ID,
+        public_key=settings.BRAINTREE_PUBLIC,
+        private_key=settings.BRAINTREE_PRIVATE
+    )
 
 class ItemCountView(View):
     def get(self, request, *args, **kwargs):
@@ -206,11 +217,28 @@ class CheckoutFinalView(CartOrderMixin, View):
 
     def post(self, request, *args, **kwargs):
         order = self.get_order()
-        if request.POST.get("payment_token") == "ABC":
-            order.mark_completed()
-            messages.success(request, "Thank you for your order")
-            del request.session["cart_id"]
-            del request.session["order_id"]
+        order_total = order.order_total
+        nonce = request.POST.get("payment_method_nonce")
+        if nonce:
+            result = braintree.Transaction.sale({
+                "amount" : order_total,
+                "payment_method_nonce": nonce,
+                "billing": {
+                    "postal_code": "%s" % (order.billing_address.zipcode)
+                },
+                "options": {
+                    "submit_for_settlement": True
+                }
+            })
+            if result.is_success:
+                order.mark_completed(order_id=result.transaction.id)
+                messages.success(request, "Thank you for your order")
+                del request.session["cart_id"]
+                del request.session["order_id"]
+            else:
+                messages.success(request, "%s" % (result.message))
+                return redirect("checkout")
+
         return redirect("order_detail", pk=order.pk)
 
     def get(self, request, *args, **kwargs):

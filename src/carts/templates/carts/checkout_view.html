@@ -28,11 +28,21 @@
         <div class="col-sm-4 col-sm-offset-4 text-center">
             <p><a href="{% url 'order_address' %}">Change Addresses</a></p>
             <br>
-            <form method="post" action="{% url 'checkout_final' %}">{% csrf_token %}
-                <input type="hidden" name="payment_token" value="ABC">
+            <form id="checkout" method="post" action="{% url 'checkout_final' %}">{% csrf_token %}
+                <!--<input type="hidden" name="payment_token" value="ABC">-->
+                <div id="payment-form"></div>
                 <p><button class="btn btn-primary" type="submit">Complete Order</button></p>
             </form>
-
         </div>
     {% endif %}
+{% endblock %}
+
+{% block pageJs %}
+    <script>
+        var clientToken = "{{ client_token }}";
+        braintree.setup(clientToken, "dropin", {
+            container: "payment-form"
+        });
+
+    </script>
 {% endblock %}
