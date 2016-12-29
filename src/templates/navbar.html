@@ -17,7 +17,7 @@
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <form class="navbar-form navbar-left" method="get" action="{% url 'products' %}">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <input type="text" class="form-control" placeholder="Search" name="q" value="{{ request.GET.q }}">
                 </div>
                 </form>
             </ul>
@@ -29,6 +29,9 @@
                             {{ request.session.cart_item_count }}
                         </span>
                     </a>
+                </li>
+                <li>
+                    <a href="{% url "categories" %}">Categories</a>
                 </li>
                 {% if request.user.is_authenticated %}
                     <li><a href="{% url 'orders' %}">Orders</a></li>
