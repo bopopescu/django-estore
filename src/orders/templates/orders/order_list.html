@@ -1,10 +1,44 @@
 {% extends "base.html"%}
 
 {% block content %}
-    {% for object in object_list %}
-        <li>
-        {{ object }}
-        </li>
+    <div class="col-sm-6 col-sm-offset-3 text-center">
+        {% if object_list|length <= 0 %}
+            <div class="text-center">
+                <p class="lead">
+                    You do not currently have orders
+                </p>
+            </div>
+        {% else %}
+            <h1>Your Orders</h1>
+            <table class="table">
+                <tr>
+                    <td>Order ID / Transaction ID</td>
+                    <td>Item Count</td>
+                    <td>Status</td>
+                    <td>Order Total</td>
+                </tr>
+                {% for object in object_list %}
+                    <tr>
+                        <td><a href="{{ object.get_absolute_url }}">
+                            {% if object.order_id %}
+                                #{{ object.order_id }}
+                            {% else %}
+                                {{ object.id }}
+                            {% endif %}
+                        </a></td>
+                        <td>
+                            {{ object.cart.items.count }}
+                        </td>
+                        <td>
+                            {{ object.status }}
+                        </td>
+                        <td>
+                            {{ object.order_total }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    </div>
 
-    {% endfor %}
 {% endblock %}

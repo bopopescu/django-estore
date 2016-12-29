@@ -9,6 +9,7 @@
         <form method="POST" action="">{% csrf_token %}
             {{ form|crispy }}
             <input type="submit" class="btn btn-default" value="Select">
+            <a class="btn btn-link" href="{% url 'user_address_create' %}">Add New</a>
         </form>
     </div>
 {% endblock %}
