@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="fixed problems">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Profile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
+    <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Profile" afterPath="$PROJECT_DIR$/Profile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +74,8 @@
       <file leaf-file-name="Profile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Profile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="17">
+              <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -472,13 +471,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481968739319</updated>
     </task>
-    <task id="LOCAL-00025" summary="075 Add, Remove, Update Cart in a CBV">
-      <created>1482252113943</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1482252113943</updated>
-    </task>
     <task id="LOCAL-00026" summary="076 Django Sessions">
       <created>1482319378307</created>
       <option name="number" value="00026" />
@@ -815,14 +807,21 @@
       <option name="project" value="LOCAL" />
       <updated>1488979468323</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="fixed problems">
+      <created>1488980190403</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1488980190403</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1239,8 +1238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Profile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
           <folding />
         </state>
       </provider>
