@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel-0.29.0.dist-info/top_level.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/wheel.exe" afterPath="$PROJECT_DIR$/Scripts/wheel.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/__main__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/__main__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/archive.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/archive.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/bdist_wheel.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/bdist_wheel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/decorator.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/decorator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/egg2wheel.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/egg2wheel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/eggnames.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/eggnames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/install.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/install.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/metadata.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/metadata.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/paths.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/paths.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/pep425tags.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/pep425tags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/pkginfo.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/pkginfo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/djbec.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/djbec.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/ed25519py.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/ed25519py.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/keys.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/signatures/keys.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/complex-dist/complexdist/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/complex-dist/complexdist/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/complex-dist/setup.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/complex-dist/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/headers.dist/setup.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/headers.dist/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/pydist-schema.json" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/pydist-schema.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/simple.dist/setup.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/simple.dist/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_basic.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_basic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_keys.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_keys.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_paths.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_paths.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_ranking.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_ranking.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_signatures.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_signatures.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_tagopt.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_tagopt.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_tool.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_tool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_wheelfile.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/test/test_wheelfile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/tool/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/tool/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/util.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/wheel/wininst2wheel.py" afterPath="$PROJECT_DIR$/Lib/site-packages/wheel/wininst2wheel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pip-selfcheck.json" afterPath="$PROJECT_DIR$/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/products/templates/products/product_detail.html" afterPath="$PROJECT_DIR$/src/products/templates/products/product_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/navbar.html" afterPath="$PROJECT_DIR$/src/templates/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,8 +64,8 @@
       <file leaf-file-name="product_detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/products/templates/products/product_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+            <state relative-caret-position="338">
+              <caret line="102" column="47" lean-forward="true" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -141,6 +95,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -561,13 +518,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481968739319</updated>
     </task>
-    <task id="LOCAL-00021" summary="071 Product Editing with Django Admin Inlines">
-      <created>1482247283144</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1482247283144</updated>
-    </task>
     <task id="LOCAL-00022" summary="072 Carts App">
       <created>1482248357807</created>
       <option name="number" value="00022" />
@@ -904,12 +854,19 @@
       <option name="project" value="LOCAL" />
       <updated>1483010931557</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="fixed problems">
+      <created>1488978487410</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1488978487411</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1327,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/products/templates/products/product_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        <state relative-caret-position="338">
+          <caret line="102" column="47" lean-forward="true" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
           <folding />
         </state>
       </provider>
