@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc304465-e507-488d-ab31-e890283c6b69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageCms.py" afterPath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageCms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/JpegImagePlugin.py" afterPath="$PROJECT_DIR$/Lib/site-packages/PIL/JpegImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PngImagePlugin.py" afterPath="$PROJECT_DIR$/Lib/site-packages/PIL/PngImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/TiffImagePlugin.py" afterPath="$PROJECT_DIR$/Lib/site-packages/PIL/TiffImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/TiffTags.py" afterPath="$PROJECT_DIR$/Lib/site-packages/PIL/TiffTags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/awscli/customizations/datapipeline/createdefaultroles.py" afterPath="$PROJECT_DIR$/Lib/site-packages/awscli/customizations/datapipeline/createdefaultroles.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/awscli/customizations/emr/createdefaultroles.py" afterPath="$PROJECT_DIR$/Lib/site-packages/awscli/customizations/emr/createdefaultroles.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/awscli/customizations/emr/helptext.py" afterPath="$PROJECT_DIR$/Lib/site-packages/awscli/customizations/emr/helptext.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/boto/ec2/connection.py" afterPath="$PROJECT_DIR$/Lib/site-packages/boto/ec2/connection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/boto/ec2/image.py" afterPath="$PROJECT_DIR$/Lib/site-packages/boto/ec2/image.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/boto/provider.py" afterPath="$PROJECT_DIR$/Lib/site-packages/boto/provider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/botocore/config.py" afterPath="$PROJECT_DIR$/Lib/site-packages/botocore/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/nose/plugins/builtin.py" afterPath="$PROJECT_DIR$/Lib/site-packages/nose/plugins/builtin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Profile" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Profile">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="45" lean-forward="true" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+              <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -472,13 +484,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481968739319</updated>
     </task>
-    <task id="LOCAL-00029" summary="079 Format Cart  Remove Items">
-      <created>1482326086041</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1482326086041</updated>
-    </task>
     <task id="LOCAL-00030" summary="080 Update Cart Item Quantity in Cart">
       <created>1482327001750</created>
       <option name="number" value="00030" />
@@ -815,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488980932824</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="fixed problems">
+      <created>1489549121021</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1489549121022</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1224,10 +1236,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Profile">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="true" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
           <folding />
         </state>
       </provider>
